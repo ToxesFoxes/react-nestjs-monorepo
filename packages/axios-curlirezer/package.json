@@ -1,0 +1,21 @@
+{
+    "private": true,
+    "name": "@tfs/axios-curlirezer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.7.7"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.2"
+    }
+}

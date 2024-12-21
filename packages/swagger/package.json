@@ -1,0 +1,26 @@
+{
+    "private": true,
+    "name": "@tfs/swagger",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@nestjs/common": "^10.0.0",
+        "@nestjs/config": "^3.3.0",
+        "@nestjs/swagger": "^8.1.0",
+        "@scalar/nestjs-api-reference": "^0.3.174",
+        "express-basic-auth": "^1.2.1"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.2",
+        "colors-cli": "^1.0.33"
+    }
+}

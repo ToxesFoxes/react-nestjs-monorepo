@@ -1,0 +1,9 @@
+{
+    "npm.packageManager": "pnpm",
+    "typescript.format.semicolons": "remove",
+    "javascript.format.semicolons": "remove",
+    "editor.wrappingIndent": "indent",
+    "editor.indentSize": "tabSize",
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+}

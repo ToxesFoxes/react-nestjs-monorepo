@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "name": "@tfs/libphonenumber",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "google-libphonenumber": "^3.2.38"
+    },
+    "devDependencies": {
+        "@types/google-libphonenumber": "^7.4.30",
+        "typescript": "^5.7.2"
+    }
+}
