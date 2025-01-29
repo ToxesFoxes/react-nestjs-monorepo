@@ -98,9 +98,15 @@ export namespace Swagger {
     }
 
     export namespace DynamicConfig {
-        export const tags: { name: string, description: string }[] = []
+        export let tags: { name: string, description: string }[] = []
         export const addTag = (name: string, description: string) => {
             tags.push({ name, description })
+        }
+        export const addTags = (tagsList: { name: string, description: string }[]) => {
+            tags.push(...tagsList)
+        }
+        export const setTags = (tagsList: { name: string, description: string }[]) => {
+            tags = [...tagsList]
         }
     }
 
