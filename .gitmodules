@@ -1,3 +1,6 @@
 [submodule "packages/env-resolver"]
 	path = packages/env-resolver
 	url = git@github.com:ToxesFoxes/env-resolver.git
+[submodule "packages/custom-router"]
+	path = packages/custom-router
+	url = git@github.com:ToxesFoxes/custom-router.git
