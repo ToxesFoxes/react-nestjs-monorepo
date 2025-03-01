@@ -1,0 +1,3 @@
+[submodule "packages/env-resolver"]
+	path = packages/env-resolver
+	url = git@github.com:ToxesFoxes/env-resolver.git
