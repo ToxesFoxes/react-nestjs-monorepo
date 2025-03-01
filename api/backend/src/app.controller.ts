@@ -1,7 +1,7 @@
 import { Controller } from '@nestjs/common'
 import { AppService } from './app.service'
-import { Get } from '@tfs/custom-router'
-import { Swagger } from '@tfs/swagger'
+import { Get } from '@toxesfoxes/custom-router'
+import { Swagger } from '@toxesfoxes/nest-swagger'
 
 Swagger.DynamicConfig.addTag('App', 'App controller')
 

@@ -1,6 +1,6 @@
 import { NestFactory } from '@nestjs/core'
 import { AppModule } from './app.module'
-import { ScalarUI, Swagger } from '@tfs/swagger'
+import { ScalarUI, Swagger } from '@toxesfoxes/nest-swagger'
 import { UnhandledExceptionFilter } from './engine/filters/unhandled-exception.filter'
 import { InternalDisabledLogger } from './engine/loggers/disable-standart-logs.logger'
 import { NestExpressApplication } from '@nestjs/platform-express'
@@ -27,15 +27,15 @@ async function bootstrap() {
     app.useBodyParser('urlencoded', { limit: '50mb', extended: true, })
 
     const swaggerConfig: Swagger.Config.Env = {
-        NODE_ENV: process.env.NODE_ENV,
         additional_servers: [],
         api_host_full: 'http://localhost:3000',
         api_port: 3000,
         enable: true,
-        password: null,
+        NODE_ENV: 'development',
         prefix: 'api',
         protect: false,
-        username: null,
+        username: 'admin',
+        password: 'default',
     }
     const swaggerDocument = await Swagger.Core.buildDocument(app, swaggerConfig)
     Swagger.setup(app, swaggerConfig, swaggerDocument)
