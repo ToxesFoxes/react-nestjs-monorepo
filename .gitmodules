@@ -4,3 +4,6 @@
 [submodule "packages/custom-router"]
 	path = packages/custom-router
 	url = git@github.com:ToxesFoxes/custom-router.git
+[submodule "packages/nest-swagger"]
+	path = packages/nest-swagger
+	url = git@github.com:ToxesFoxes/nest-swagger.git
